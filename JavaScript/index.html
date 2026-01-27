@@ -23,6 +23,15 @@
 
         //for console 
         console.log("hello.");
+
+        //redeclaration of variable using var
+        var a = 10;
+        for(var i=0; i<5; i++){
+            var a = 20; // redeclaring 'a' inside the loop
+            document.write("Inside loop: a = " + a + "<br>"); // 'a' is 20 here
+        }
+        document.write("Outside loop: a = " + a + "<br>"); // 'a' is 20 here
+        
     </script>
 </body>
 </html>
