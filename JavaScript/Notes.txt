@@ -1,4 +1,6 @@
-datatypes - var,let,const
+Dynamically typed language. (means datatype not required)
+primitive datatypes - string, boolean, undefined, int, bigInt, Number, Null, Symbol
+non-primitive - object, array, function (compkex, mutable)
 
 var ->
 Scope: Function scoped
@@ -18,6 +20,7 @@ Re-declaration: Not allowed in the same scope
 Reassignment: Not allowed
 Hoisting: Hoisted but not initialised (Temporal dead zone)
 
+# == vs ===
 var v = 10
 var r = "10"
 console.log(v == r)  // true
