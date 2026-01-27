@@ -1,5 +1,12 @@
 datatypes - var,let,const
 
+var ->
+Scope: Function scoped
+Re-declaration: allowed within the same scope
+Reassignment: allowed
+Hoisting: variables are hosted and initialised with undefined
+
+
 var v = 10
 var r = "10"
 console.log(v == r)  // true
