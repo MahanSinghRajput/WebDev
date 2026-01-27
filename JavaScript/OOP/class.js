@@ -35,3 +35,19 @@ class PersonClass {
 }
 var person2 = new PersonClass("Nahi Bataunga", 21, 30);
 person2.displayInfo();
+
+
+//for objects
+//here reassiging object properties and accessing them is possible
+const person22 = {
+    name: "Nahi Bataunga",
+    age: 21,
+    roll: 30,
+    displayInfo: function displayInfo() {
+        console.log("Name: " + this.name + ", Age: " + this.age + ", Roll: " + this.roll);
+    }
+}
+person22.name = "Changed Name"; // Modifying property
+console.log(person22.name);  // Accessing property
+console.log(person22["name"]);  // Accessing property using bracket notation
+person22.displayInfo();
