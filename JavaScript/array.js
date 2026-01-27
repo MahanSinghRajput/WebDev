@@ -1,0 +1,1 @@
+//array doesn't need to have same data type
