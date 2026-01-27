@@ -6,6 +6,17 @@ Re-declaration: allowed within the same scope
 Reassignment: allowed
 Hoisting: variables are hosted and initialised with undefined
 
+let ->
+Scope: Block-scoped({})
+Re-declaration: Not allowed in the same scope
+Reassignment: allowed
+Hoisting: Hoisted but not initialised (Temporal dead zone)
+
+const ->
+Scope: Block-scoped({})
+Re-declaration: Not allowed in the same scope
+Reassignment: Not allowed
+Hoisting: Hoisted but not initialised (Temporal dead zone)
 
 var v = 10
 var r = "10"
