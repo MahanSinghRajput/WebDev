@@ -1,0 +1,6 @@
+datatypes - var,let,const
+
+var v = 10
+var r = "10"
+console.log(v == r)  // true
+console.log(v === r) // false
