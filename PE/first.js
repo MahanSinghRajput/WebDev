@@ -54,3 +54,17 @@ do {
     j++;
 } while (j < 5);
 //This loop will print numbers from the current value of j (which is 2 after the previous while loop) to 4.
+
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(num => console.log(num));
+//This will print each number in the array arr using the forEach method.
+
+for (let num of arr) {
+    console.log(num);
+}
+//This will also print each number in the array arr using the for...of loop.
+
+for (let index in arr) {
+    console.log(index);
+}
+//This will print the indices of the array arr using the for...in loop.
