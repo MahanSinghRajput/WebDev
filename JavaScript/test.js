@@ -29,3 +29,10 @@ console.log(typeof h[0])
 
 i = undefined
 console.log(typeof i)
+
+let obj = {
+    name: "John",
+    age: 30,
+    isStudent: false
+};
+console.log(typeof obj);
