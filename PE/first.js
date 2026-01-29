@@ -68,3 +68,52 @@ for (let index in arr) {
     console.log(index);
 }
 //This will print the indices of the array arr using the for...in loop.
+
+//Functions
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 10)); // 15
+//This function takes two parameters a and b, adds them together, and returns the result.
+
+const multiply = (a, b) => a * b;
+console.log(multiply(5, 10)); // 50
+//This is an arrow function that takes two parameters a and b, multiplies them together, and returns the result.
+
+(function() {
+    console.log("This is an IIFE");
+})();
+//This is an Immediately Invoked Function Expression (IIFE) that runs as soon as it is defined.
+
+//Data Types
+var v = 2
+console.log(typeof v)
+
+const a = Symbol("id")
+console.log(typeof a)
+
+let b = null
+console.log(typeof b)
+
+c = "hello"
+console.log(typeof c)
+
+d = 42n
+console.log(typeof d)
+
+e = true
+console.log(typeof e)
+
+f = {}
+console.log(typeof f)
+
+g = function() {}
+console.log(typeof g)
+
+h = []
+console.log(typeof h)
+
+console.log(typeof h[0])
+
+i = undefined
+console.log(typeof i)
