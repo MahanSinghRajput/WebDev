@@ -84,6 +84,13 @@ console.log(multiply(5, 10)); // 50
     console.log("This is an IIFE");
 })();
 //This is an Immediately Invoked Function Expression (IIFE) that runs as soon as it is defined.
+//parameters vs arguments
+function greet(name) { // name is a parameter
+    console.log("Hello, " + name);
+}
+greet("Alice"); // "Alice" is an argument
+//Parameters are the variables listed in the function definition, while arguments are the actual values passed to the function when it is called.
+
 
 //Data Types
 var v = 2
