@@ -74,3 +74,8 @@ for(const char of "Java"){
     if(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u')
         console.log(char)
 }
+
+const colors = ["Red","Yellow","Blue"];
+for(const[index,colour] of colors.entries()){
+    console.log(index,colour);
+}
