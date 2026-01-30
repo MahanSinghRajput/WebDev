@@ -54,4 +54,23 @@ console.log(car.special);
 const student = {name:"Abc",age:21,hobby:"Cricket"};
 for(const key in student){
     console.log(key,student[key]);
+} 
+
+//for of and for in loops
+const fruits = ["Apple","Banana","Litchi"];
+for(const fruit of fruits){
+    console.log(fruit);
+}
+for(const index in fruits){
+    console.log(index);
+}
+//for of traverses through the values while for in traverses through indexes
+
+const z = "javascript"
+for(const c of z){
+    console.log(c);
+}
+for(const char of "Java"){
+    if(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u')
+        console.log(char)
 }
