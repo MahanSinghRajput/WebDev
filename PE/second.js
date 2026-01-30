@@ -32,3 +32,12 @@ console.log(arrowFunc(5));
     console.log("This function runs immediately upon definition!");
 })();
 //The code above demonstrates various aspects of functions in JavaScript. It includes a standard function declaration (`greet`), a function expression assigned to a constant (`factorial`), an arrow function (`arrowFunc`), and an Immediately Invoked Function Expression (IIFE). Each function showcases different ways to define and use functions in JavaScript.
+
+//examples
+const sum = (a, b) => a + b;
+console.log(sum(3, 7)); // 10
+
+const difference = function(a,b){
+    return a-b;
+}
+console.log(difference(10,4)); // 6
