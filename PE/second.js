@@ -41,3 +41,12 @@ const difference = function(a,b){
     return a-b;
 }
 console.log(difference(10,4));
+
+const sales = "Toyota";
+function Types(name){
+    return name === "Honda" ? true : false;
+}
+const car = {myCar:"saturn",getCar:Types("Honda"),special:sales};
+console.log(car.myCar);
+console.log(car.getCar);
+console.log(car.special);
