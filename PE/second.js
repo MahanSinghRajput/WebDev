@@ -35,9 +35,9 @@ console.log(arrowFunc(5));
 
 //examples
 const sum = (a, b) => a + b;
-console.log(sum(3, 7)); // 10
+console.log(sum(3, 7));
 
 const difference = function(a,b){
     return a-b;
 }
-console.log(difference(10,4)); // 6
+console.log(difference(10,4));
