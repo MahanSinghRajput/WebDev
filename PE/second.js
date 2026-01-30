@@ -50,3 +50,8 @@ const car = {myCar:"saturn",getCar:Types("Honda"),special:sales};
 console.log(car.myCar);
 console.log(car.getCar);
 console.log(car.special);
+
+const student = {name:"Abc",age:21,hobby:"Cricket"};
+for(const key in student){
+    console.log(key,student[key]);
+}
