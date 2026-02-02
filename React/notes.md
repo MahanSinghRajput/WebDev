@@ -15,3 +15,5 @@ npx create vite@latest
 index.html -> index.js -> app.js
 
 make changes in name/src/app.js
+
+components in react - class and functional

@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css';  //packages //shows directory structure './' shows same package
 
 function App() {
   return (
