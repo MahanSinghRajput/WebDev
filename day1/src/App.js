@@ -7,6 +7,8 @@ function App() {
     <h1> Hello </h1>
     <h2> bhai</h2>
     </div>
+
+    //whatever you want to show on the browser is written ion return() else things are written outside
   );
 }
 
