@@ -1,5 +1,5 @@
-npx create-react-app day1
-npx create vite@latest 
+npm create-react-app day1
+npm create vite@latest 
 
 # Steps ->
 * open terminal
