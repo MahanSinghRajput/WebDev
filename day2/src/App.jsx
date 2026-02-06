@@ -11,7 +11,7 @@ function App() {
     <>
       <Header title = "my first app"/>
       <h1> hello</h1>
-      <Footer/>
+      <Footer year = "2026" company = "ME"/>
     </>
   )
 }
