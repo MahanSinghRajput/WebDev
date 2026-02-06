@@ -1,5 +1,7 @@
 export default function Footer(){
     return(
-        <h1>Footer is here</h1>
+        <footer>
+            <p>2026 by ME</p>
+        </footer>
     )
 }
