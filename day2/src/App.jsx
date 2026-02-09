@@ -2,7 +2,7 @@ import './App.css'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Table from './components/Table.jsx'
-
+import Comp from './components/Comp.jsx'
 
 function App() {
   //passing array as prop
@@ -16,6 +16,7 @@ function App() {
       <Header title = "my first app"/>
       <h1> hello</h1>
       <Table/>
+      <Comp com = "avc"/>
       <Footer year = "2026" company = "ME"/>
       <Footer year = {y} company = {c}/>
     </>
