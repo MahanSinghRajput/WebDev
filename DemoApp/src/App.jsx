@@ -18,13 +18,13 @@ function App() {
   ]
   return (
     <>
-      <h1>Users Dashboard</h1>
+      {/* <h1>My To Do List</h1> */}
       <EventToDo />
-      <Wrapper title = "Users List">
+      {/* <Wrapper title = "Users List">
         {
           users.map((use,index) => (<UserCard key = {index} user={use}/>))
         }
-      </Wrapper>
+      </Wrapper> */}
     </>
   )
 }

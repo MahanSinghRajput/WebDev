@@ -19,8 +19,8 @@
 export default function EventToDo(){
     function handleSubmit(e){
         e.preventDefault() //to prevent reload on occouring of an event
-        const input = e.target.value
-        const taskValue = input.value.trim()
+        const input = e.target.task.value
+        const taskValue = input.trim()
         if(taskValue === "") {
             alert("Empty task cannot be added")
             return
@@ -40,12 +40,12 @@ export default function EventToDo(){
     return(
         <>
         <h1>To Do List</h1>
-        <form onSubmit={() => handleSubmit()}>
-            <input type = "text" name = "task" placeholder="Enter Task">New</input>
+        <form onSubmit={handleSubmit}>
+            <input type = "text" name = "task" placeholder="Enter Task" />
             <button type = "submit">Add Task</button>
         </form>
         <ul id = "list" onClick={handleListClick}>
-
+            
         </ul>
         </>
     )
