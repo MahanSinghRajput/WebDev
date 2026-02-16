@@ -13,3 +13,13 @@ async function driver(){
     console.log("execution completed")
 }
 driver()
+
+//try catch in async
+async function getData(){
+    try{
+        const data = await fetchData()
+        console.log(data)
+    }catch(error){
+        console.log(error);
+    }
+}
