@@ -36,3 +36,10 @@ let obj = {
     isStudent: false
 };
 console.log(typeof obj);
+
+
+//map 
+const num = [1,2,3,4]
+const newNum = num.map(n => n*2)
+//.map((element,index) => <li>{element}</li>)
+//map can also be used for html elements
