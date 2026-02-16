@@ -6,4 +6,14 @@ function processUserInput(callback){
     const name = "Abc"
     callback(name)
 }
-processUserInput(greet)
+//processUserInput(greet)
+
+
+//callback
+function greet(){
+    console.log("welcoms");
+}
+function execute(fn){
+    fn()
+}
+execute(greet)
