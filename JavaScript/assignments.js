@@ -47,7 +47,7 @@ const result = add(...numbers);
 
 
 
-//Assignmeant 3
+//Assignmeant 2
 //Q1. Print student(Object) details (name, roll, marks) using template literals.
 // const student = {
 //     name: "ABCD",
@@ -127,4 +127,38 @@ const student = {
   }
 };
 
-student.display();
+//student.display();
+
+
+
+//Assignment 3
+/*
+    Create a function checkResult(marks) that returns a Promise.
+    Simulate a delay of 2 seconds using setTimeout.
+    Logic:
+        If marks ≥ 40 → resolve with "Pass".
+        If marks < 40 → reject with "Fail".
+    Consume the Promise using:
+        .then() to display success message.
+        .catch() to display error message.
+    Display a message like:
+        "Checking result... please wait" before the promise executes.
+*/
+
+function checkResult(marks){
+    return new Promise((resolve,reject) => {
+        console.log("Checking result... please wait")
+        if(marks >= 40) resolve('Pass')
+        else reject('Fail')
+    }).then((r) => {
+        setTimeout(()=>{
+            console.log("Pass")
+        },2000)
+    }).catch((e) => {
+        setTimeout(()=>{
+            console.log("Fail")
+        },2000)
+    })
+}
+//checkResult(53)
+//checkResult(23)
