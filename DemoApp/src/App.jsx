@@ -4,6 +4,7 @@ import UserCard from './components/UserCard'
 import EventToDo from './components/EventToDo'
 import Counter from './components/Counter'
 import Score from './components/Score'
+import Search from './components/Search'
 function App() {
   const users = [
     {
@@ -20,7 +21,8 @@ function App() {
   return (
     <>
       {/* <h1>My To Do List</h1> */}
-      <Score />
+      <Search />
+      {/* <Score /> */}
       {/* <Counter /> */}
       {/* <EventToDo /> */}
       {/* <Wrapper title = "Users List">
