@@ -46,6 +46,7 @@ import { useState } from 'react'
 import Header from './newComponenets/Header'
 import ProductCard from './newComponenets/ProductCard'
 import ProductList from './newComponenets/ProductList'
+
 export default function App(){
   function removeFromCart(product){
     const index = cart.findIndex(item => item.id === product.id);
@@ -58,9 +59,10 @@ export default function App(){
   }
   function addToCart(product){
     setCart([...cart, product])
+    setTotalAmount(totalAmount + product.price)
   }
   const [cart,setCart] = useState([])
-  const [totalAmount,setTotalAmount] = useState()
+  const [totalAmount,setTotalAmount] = useState(0)
   const products = [
     {
       id: 1,
@@ -84,7 +86,7 @@ export default function App(){
 
   return(
     <div>
-      <Header cartCount={cart.length}/>
+      <Header cartCount={cart.length} />
       <ProductList products={products} addToCart={addToCart} removeFromCart={removeFromCart}/>
     </div>
   )
