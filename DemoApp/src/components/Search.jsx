@@ -1,8 +1,8 @@
 import { useState } from "react"
-export default function Search(){
+export default function Search({products}){
     const [find,setFind] = useState("")
-    const name = ["abc","bcd","def"]
-    const student = name.filter((names) => names.toLowerCase().includes(find.toLowerCase()))
+    //const name = ["abc","bcd","def"]
+    const student = products.filter((names) => names.toLowerCase().includes(find.toLowerCase()))
     return(
         <div>
             <input type = "text"

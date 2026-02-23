@@ -46,6 +46,7 @@ import { useState } from 'react'
 import Header from './newComponenets/Header'
 import ProductCard from './newComponenets/ProductCard'
 import ProductList from './newComponenets/ProductList'
+import Search from './components/Search'
 
 export default function App(){
   function removeFromCart(product){
@@ -83,9 +84,10 @@ export default function App(){
       image: "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdhdGNofGVufDB8fDB8fHww"
     }
   ]
-
+  const pName = ["laptop","watch","mobile"]
   return(
     <div>
+      <Search products = {pName}/>
       <Header cartCount={cart.length} />
       <ProductList products={products} addToCart={addToCart} removeFromCart={removeFromCart}/>
     </div>
