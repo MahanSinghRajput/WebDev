@@ -21,3 +21,11 @@ components in react - class and functional
 #To run
 cd appname
 npm run dev
+
+# useEffect
+```javascript
+import {useEffect} from "react"
+useEffect(() => {
+  console.log("h")
+}[])
+```
