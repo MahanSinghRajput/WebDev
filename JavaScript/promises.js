@@ -13,3 +13,10 @@ pro.then((message) => {
     console.log('This is in the catch ' + message);
 })
 
+
+
+//consuming promise
+import axios from 'axios'
+axios.get("https://jsonplaceholder.typicode.com/users")
+.then(data => console.log(data))
+.catch(error => console.log(error))
